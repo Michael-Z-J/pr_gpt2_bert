@@ -1,19 +1,11 @@
 #!/bin/bash
-#SBATCH --job-name="pr"
-#SBATCH --gpus=h100:1
-#SBATCH --mem=64G
-#SBATCH --output="%x.o%j"
-#SBATCH --time=24:00:00
-#SBATCH --account=def-annielee
-#SBATCH --cpus-per-task=4
-#SBATCH --mail-user=jm3743@georgetown.edu
-#SBATCH --mail-type=END,FAIL
-#############################################################
+#SBATCH --<slurm details>
 
-# install the environment by loading in python and required packages
-source env.sh
+python bertGlue.py --task wnli --epochs 3 --batch 16
+python gptGlue.py --task wnli --epochs 3 --batch 16
+python t5Glue.py --task wnli --epochs 3 --batch 16
 
-#############################################################
-
-echo "Job Array ID / Job ID: $SLURM_ARRAY_JOB_ID / $SLURM_JOB_ID"
-python main.py >> train.log
+# example nonGLUE run
+python gpt2_downstream.py \
+    --task genia \
+    --output outputs/pr_gpt2_genia_results.csv
