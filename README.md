@@ -55,5 +55,6 @@ To vary models, pass in the flag --model followed by model name
 
 To run OIE experiment, first clone the oie-benchmark before running oie_bert_BIO_tags.py or oie_gpt2.py
 
-Many of the T5 tasks were run using https://github.com/aatlantise/punc-rest-improves
+T5_train_eval.py is intended to be run using https://github.com/aatlantise/punc-rest-improves
+
 
