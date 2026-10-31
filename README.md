@@ -30,6 +30,8 @@ The checkpoints created for the experiments should be:
 ./bert-base-uncased
 ./pr-bert-financial-news
 
+The trained models can also be found here: https://drive.google.com/drive/folders/1zVygpss7NvglnqYMeZ0m1ooDPs0QeBoa?usp=drive_link
+
 
 ## Experiments
 Below are examples of running GLUE experiment wnli
