@@ -35,7 +35,9 @@ The checkpoints created for the experiments should be:
 Below are examples of running GLUE experiment wnli
 
 python bertGlue.py --task wnli --epochs 3 --batch 16
+
 python gptGlue.py --task wnli --epochs 3 --batch 16
+
 python t5Glue.py --task wnli --epochs 3 --batch 16
 
 To vary to other GLUE tasks, switch "wnli" for any of:
@@ -44,8 +46,10 @@ sst2, qqp, mnli_matched, mnli_mismatched, qnli, rte, wnli, cola, mrpc, stsb
 Non-GLUE tasks can be run using the downstream files
 
 E.g. for running ontonotes5:
-#python bert_downstream.py --task ontonotes5 --output outputs/pr_bert_ontonotes5_results.csv
-#python gpt2_downstream.py --task ontonotes5 --output outputs/pr_gpt2_ontonotes5_results.csv
+
+python bert_downstream.py --task ontonotes5 --output outputs/pr_bert_ontonotes5_results.csv
+
+python gpt2_downstream.py --task ontonotes5 --output outputs/pr_gpt2_ontonotes5_results.csv
 
 The supported tasks are:
 pos, ner, genia, ontonotes5
