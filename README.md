@@ -25,10 +25,11 @@ To train Bert-base-uncased: python train_bert.py
 
 The checkpoints created for the experiments should be:
 ./gpt2-medium
-./pr-gpt2-medium-financial-news
+./pr-gpt2-output
 
 ./bert-base-uncased
 ./pr-bert-financial-news
+
 
 ## Experiments
 Below are examples of running GLUE experiment wnli
