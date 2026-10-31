@@ -38,7 +38,7 @@ python gptGlue.py --task wnli --epochs 3 --batch 16
 python t5Glue.py --task wnli --epochs 3 --batch 16
 
 To vary to other GLUE tasks, switch "wnli" for any of:
-sst2, qqp, mnli_matched, mnli_msimatched, qnli, rte, wnli, cola, mrpc, stsb
+sst2, qqp, mnli_matched, mnli_mismatched, qnli, rte, wnli, cola, mrpc, stsb
 
 Non-GLUE tasks can be run using the downstream files
 
